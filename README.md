@@ -1,0 +1,2 @@
+# genrelist
+Kategori
