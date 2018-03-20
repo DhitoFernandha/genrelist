@@ -1,22 +1,11 @@
 // ---------------------------------------------------
-// BLOGTOC
+// MANGALOID
 // ---------------------------------------------------
-// BlogToc creates a clickable Table Of Contents for
-// Blogger Blogs.
-// It uses the JSON post feed, and create a ToC of it.
-// The ToC can be sorted by title or by date, both
-// ascending and descending, and can be filtered by
-// label.
+// PORTAL DOWNLOAD MANGA DAN LIGHT NOVEL BAHASA INDONESIA
 // ---------------------------------------------------
-// Author: Beautiful Beta
-// Url: http://beautifulbeta.blogspot.com
-// Version: 2
-// Date: 2007-04-12
+// Author: Admin
+// Url: https://www.mangaloid.web.id/
 // ---------------------------------------------------
-// Modified by Aneesh 
-// www.bloggerplugins.org
-// Date : 02-08-2011
-// global arrays
 
    var postTitle = new Array();     // array of posttitles
    var postUrl = new Array();       // array of posturls
@@ -220,9 +209,9 @@ function displayToc(filter) {
    }
    tocTable += '</table>';
    if (numDisplayed == postTitle.length) {
-      var tocNote = '<span class="toc-note">Displaying all ' + postTitle.length + ' posts<br/></span>'; }
+      var tocNote = '<span class="toc-note">Menampilkan ' + postTitle.length + ' posts<br/></span>'; }
    else {
-      var tocNote = '<span class="toc-note">Displaying ' + numDisplayed + ' posts labeled \'';
+      var tocNote = '<span class="toc-note">Menampilkan ' + numDisplayed + ' posts labeled \'';
       tocNote += postFilter + '\' of '+ postTitle.length + ' posts total<br/></span>';
    }
    tocdiv.innerHTML = tocNote + tocTable;
@@ -256,5 +245,5 @@ function hideToc() {
   var tocdiv = document.getElementById("toc");
   tocdiv.innerHTML = '';
   var toclink = document.getElementById("toclink");
-  toclink.innerHTML = '<a href="#" onclick="scroll(0,0); showToc(); Effect.toggle('+"'toc-result','blind');"+'">» Show Table of Contents</a> <img src="http://chenkaie.blog.googlepages.com/new_1.gif"/>';
+  toclink.innerHTML = '<a href="#" onclick="scroll(0,0); showToc(); Effect.toggle('+"'toc-result','blind');"+'">? Show Table of Contents</a> <img src="http://chenkaie.blog.googlepages.com/new_1.gif"/>';
 }
